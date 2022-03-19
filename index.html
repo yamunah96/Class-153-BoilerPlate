@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/zcanter/aframe-gradient-sky/master/dist/gradientsky.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+
+    <!-- IMPORTED COMPONENTS -->
+    <script src="./js/Fish.js"></script>
+    <script src="./js/Treasure.js"></script>
+    <script src="./js/Rotation.js"></script>
+    <script src="./js/Game.js"></script>
+  </head>
+  <body>
+    <a-scene physics>
+      <!---Assets-->
+      <a-a-assets>
+        <a-asset-item id="island" src="assets/island/scene.gltf"></a-asset-item>
+
+        <a-asset-item
+          id="treasure"
+          src="assets/treasure/model.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="xyz"
+          src="assets/coral_fish/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item id="turtle" src="assets/turtle/scene.gltf"></a-asset-item>
+        <a-asset-item id="trout" src="assets/trout/scene.gltf"></a-asset-item>
+        <a-asset-item
+          id="scuba_driver"
+          src="assets/scuba_driver/scene.gltf"
+        ></a-asset-item>
+      </a-a-assets>
+
+      <!-- Sky -->
+      <a-sky
+        geometry="primitive: sphere;"
+        material="shader: gradient; bottomColor: #00009e; topColor:109 205 227;offset: 0.0001;"
+        radius="100"
+        theta-length="180"
+        side="double"
+        animation="property: rotation; to: 0 300 0; easing:linear; loop: true; dur: 500000"
+      >
+        <!------------------------------------GLTF Models------------------------------------------>
+
+        <!--Island-->
+        
+
+        <!--Trasures-->
+        
+
+        <!--Fish Entity-->
+      
+        <!--Treasure Entity-->
+    
+
+        <!--Turtule-->
+       
+
+      <!--Scuba Driver-->
+      
+
+    
+
+      <!-- CAMERA -->
+      <a-entity
+        camera="active: true"
+        look-controls
+        position="0 10 25"
+      ></a-entity>
+
+       <!-----------------------------------Game Timer and Score------------------------------------------>
+       
+        <!-- Traget Status -->
+      
+    </a-scene>
+  </body>
+</html>
